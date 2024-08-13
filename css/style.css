@@ -1,0 +1,402 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+:root {
+  --primary-color: #2a5390;
+  --prueba1: #173c74;
+  --prueba2: #173e79;
+  --prueba3: #204680;
+  /*
+    #204680
+    #173e79
+    #173c74
+    */ }
+
+body {
+  background: radial-gradient(circle, white 0%, #e2e2e2 110%);
+  font-family: "Montserrat", sans-serif; }
+
+header nav {
+  width: 98%;
+  height: 13vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  header nav .logo {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header nav .logo img {
+      width: 60px; }
+  header nav .navbar {
+    width: 60vw;
+    height: 100%; }
+    header nav .navbar .navbar-fondo {
+      width: 100%;
+      height: 100%;
+      background-image: url(../assets/images/Nav-Fondo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      /*ESTILOS PAGINA INICIO*/ }
+      header nav .navbar .navbar-fondo ul {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-auto-rows: 20px;
+        gap: 5px; }
+        header nav .navbar .navbar-fondo ul li {
+          display: inline-block;
+          text-align: center; }
+          header nav .navbar .navbar-fondo ul li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            padding: 1px; }
+            header nav .navbar .navbar-fondo ul li a:hover {
+              border-bottom: 1px solid white; }
+      header nav .navbar .navbar-fondo .Nav-buscador {
+        width: 250px;
+        display: flex;
+        background-color: white;
+        padding: 5px 5px;
+        margin-right: 100px;
+        border-radius: 8px; }
+        header nav .navbar .navbar-fondo .Nav-buscador img {
+          width: 20px;
+          margin-right: 15px; }
+        header nav .navbar .navbar-fondo .Nav-buscador form input[type="text"] {
+          width: 190px;
+          border: 0;
+          border-bottom: 1px solid var(--primary-color); }
+          header nav .navbar .navbar-fondo .Nav-buscador form input[type="text"]:focus {
+            outline: none;
+            border: 1px solid var(--primary-color); }
+      header nav .navbar .navbar-fondo .Nav-botones {
+        width: 40%; }
+        header nav .navbar .navbar-fondo .Nav-botones .iconos {
+          width: 35px;
+          margin-right: 35px; }
+
+main {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /*ESTILOS INICIO*/ }
+  main .banner-contenedor {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    position: relative;
+    margin: 20px 0 20px 0; }
+    main .banner-contenedor .banner-imagen {
+      width: 50%;
+      height: 100%;
+      background-image: url(../assets/images/p1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    main .banner-contenedor .banner-figura {
+      width: 70%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      z-index: 1000; }
+      main .banner-contenedor .banner-figura .banner-info {
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/images/asd2.png);
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 1fr); }
+        main .banner-contenedor .banner-figura .banner-info article {
+          grid-column: 4 / 7;
+          grid-row: 2 / 7;
+          text-align: center; }
+          main .banner-contenedor .banner-figura .banner-info article p, main .banner-contenedor .banner-figura .banner-info article h1 {
+            font-size: 40px;
+            font-weight: 500;
+            color: white;
+            text-align: center; }
+          main .banner-contenedor .banner-figura .banner-info article .banner-informacion {
+            margin-top: 20px;
+            font-size: 22px;
+            color: white; }
+          main .banner-contenedor .banner-figura .banner-info article .Banner-boton {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center; }
+            main .banner-contenedor .banner-figura .banner-info article .Banner-boton button {
+              padding: 15px 70px;
+              border: 0px;
+              background-color: white;
+              border-radius: 15px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336); }
+              main .banner-contenedor .banner-figura .banner-info article .Banner-boton button a {
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+                color: var(--primary-color); }
+              main .banner-contenedor .banner-figura .banner-info article .Banner-boton button:hover {
+                scale: 1.1; }
+  main .QuienesSomos {
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+    main .QuienesSomos article {
+      width: 70%;
+      font-size: 20px;
+      font-weight: 500; }
+  main .Seleccionado {
+    border-bottom: 2px solid white; }
+  main .navegacion {
+    width: 35%;
+    height: 50px;
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px; }
+    main .navegacion div {
+      width: 40px;
+      height: 40px;
+      text-align: center; }
+      main .navegacion div img {
+        width: 35px; }
+  main .Contenedor {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px; }
+    main .Contenedor .tarjeta {
+      width: 90%;
+      background-color: white;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.507);
+      /*ESTILOS REFUGIOS*/
+      /*ESTILOS VISTA*/ }
+      main .Contenedor .tarjeta .tarjeta-infoUsuario {
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center; }
+        main .Contenedor .tarjeta .tarjeta-infoUsuario .usuario-foto {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden; }
+          main .Contenedor .tarjeta .tarjeta-infoUsuario .usuario-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        main .Contenedor .tarjeta .tarjeta-infoUsuario .usuario-info {
+          width: 70%;
+          height: 40px;
+          margin: 10px; }
+          main .Contenedor .tarjeta .tarjeta-infoUsuario .usuario-info p:first-child {
+            font-weight: 600;
+            color: var(--primary-color); }
+          main .Contenedor .tarjeta .tarjeta-infoUsuario .usuario-info p:last-child {
+            font-size: 12px;
+            color: grey; }
+      main .Contenedor .tarjeta .tarjeta-imagen {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        border-radius: 0 0 15px 15px;
+        overflow: hidden; }
+        main .Contenedor .tarjeta .tarjeta-imagen img {
+          width: 100%; }
+      main .Contenedor .tarjeta .tarjeta-informacion {
+        width: 90%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 5px; }
+        main .Contenedor .tarjeta .tarjeta-informacion p {
+          font-size: 14px; }
+      main .Contenedor .tarjeta .botones {
+        width: 90%;
+        height: 45px;
+        margin: 0 auto;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        main .Contenedor .tarjeta .botones button {
+          padding: 7px 15px;
+          background-color: var(--primary-color);
+          border: none;
+          border-radius: 5px; }
+          main .Contenedor .tarjeta .botones button a {
+            text-decoration: none;
+            color: white; }
+        main .Contenedor .tarjeta .botones .botones-iconos {
+          margin-left: 5px; }
+          main .Contenedor .tarjeta .botones .botones-iconos img {
+            width: 30px;
+            margin: 5px; }
+      main .Contenedor .tarjeta .barra {
+        border-bottom: 2px solid lightgrey; }
+      main .Contenedor .tarjeta .noBarra {
+        border-bottom: none !important; }
+      main .Contenedor .tarjeta .a {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; }
+      main .Contenedor .tarjeta .b {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2; }
+      main .Contenedor .tarjeta .c {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2; }
+      main .Contenedor .tarjeta .d {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3; }
+      main .Contenedor .tarjeta .e {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3; }
+      main .Contenedor .tarjeta .f {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3; }
+      main .Contenedor .tarjeta .seguir {
+        width: 20% !important; }
+      main .Contenedor .tarjeta .tarjeta-imagenesContenedor {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 15px; }
+        main .Contenedor .tarjeta .tarjeta-imagenesContenedor div {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          overflow: hidden; }
+          main .Contenedor .tarjeta .tarjeta-imagenesContenedor div img {
+            width: 100%; }
+      main .Contenedor .tarjeta .tarjeta-publicaciones {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-auto-rows: 280px;
+        gap: 20px; }
+        main .Contenedor .tarjeta .tarjeta-publicaciones div {
+          overflow: hidden; }
+          main .Contenedor .tarjeta .tarjeta-publicaciones div img {
+            width: 100%; }
+
+.tamañoDisminuido p {
+  font-size: 20px; }
+
+.tamañoDisminuido .botones {
+  display: inline-block;
+  margin-left: 20px; }
+
+.ajuste {
+  width: 10% !important; }
+
+.ajuste .botones-iconos {
+  display: flex; }
+
+.unaColumna .tarjeta-informacion {
+  border-bottom: 2px solid lightgrey; }
+
+.tamañoDisminuido div {
+  display: inline-flex;
+  flex-direction: column; }
+
+.fotoGrande {
+  width: 120px !important;
+  height: 120px !important; }
+
+.tamañoAumentado {
+  height: 150px !important; }
+
+.unaColumna {
+  display: flex !important; }
+
+.dosColumnas {
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-template-rows: repeat(1, 1fr) !important; }
+
+footer {
+  width: 98%;
+  height: 25vh;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 2000; }
+  footer .Redes {
+    width: 250px;
+    grid-column: 1 / 3;
+    display: flex; }
+    footer .Redes .Redes-iconos {
+      display: flex;
+      flex-direction: column; }
+      footer .Redes .Redes-iconos img {
+        margin-left: 10px;
+        padding: 5px; }
+    footer .Redes .Redes-info {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column; }
+      footer .Redes .Redes-info p {
+        color: white; }
+  footer .DerechosReservados {
+    grid-column: 3 / 6; }
+    footer .DerechosReservados p {
+      color: white; }
+
+@media (max-width: 650px) {
+  main {
+    height: 290vh; }
+    main .banner-contenedor {
+      flex-direction: column; }
+      main .banner-contenedor .banner-imagen {
+        width: 100%;
+        height: 55%; }
+      main .banner-contenedor .banner-figura {
+        width: 100%;
+        height: 85%;
+        bottom: 0; }
+        main .banner-contenedor .banner-figura .banner-info {
+          background-image: url(../assets/images/Banner.png);
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(5, 1fr); }
+          main .banner-contenedor .banner-figura .banner-info article {
+            grid-column: 2 / 5;
+            grid-row: 3 / 5; } }
