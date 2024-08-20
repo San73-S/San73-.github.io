@@ -1,3 +1,19 @@
+
+@import "./base/reset";
+
+@import "./layout/navbar-fondo";
+@import "./layout/navbar-index";
+@import "./layout/navbar-general";
+@import "./layout/main-index";
+@import "./layout/main-inicio";
+@import "./layout/main-navegacion";
+@import "./layout/main-refugios";
+@import "./layout/main-refugios-Vista";
+@import "./layout/footer";
+
+@import"./components/button";
+
+/*
 *{
     padding: 0;
     margin: 0;
@@ -9,11 +25,6 @@
     --prueba1: #173c74; 
     --prueba2: #173e79; 
     --prueba3: #204680; 
-    /*
-    #204680
-    #173e79
-    #173c74
-    */
 }
 
 body{
@@ -70,7 +81,6 @@ header{
                             }
                         }
                     }
-                    /*ESTILOS PAGINA INICIO*/
                     .Nav-buscador{
                         width: 250px;
                         display: flex;
@@ -194,7 +204,6 @@ main{
             font-weight: 500;
         }
     }
-     /*ESTILOS INICIO*/
      .Seleccionado{
         border-bottom: 2px solid white;
     }
@@ -334,8 +343,6 @@ main{
             .seguir{
                 width: 20% !important;
             }
-            /*ESTILOS REFUGIOS*/
-            
             .tarjeta-imagenesContenedor{
                 width: 90%;
                 margin: 0 auto;
@@ -355,8 +362,6 @@ main{
                     }
                 }
             }
-
-            /*ESTILOS VISTA*/
             .tarjeta-publicaciones{
                 width: 90%;
                 max-width: 1100px;
@@ -489,3 +494,4 @@ footer{
         }
     }
 }
+*/

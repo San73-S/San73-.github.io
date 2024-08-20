@@ -1,0 +1,38 @@
+@import 'navbar-fondo';
+
+.navbar-fondo2{
+    @extend .navbar-fondo;
+    justify-content: center;
+    gap: 20%;
+    .Nav-buscador{
+        width: 250px;
+        height: 35px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        img{
+            width: 20px;
+            margin-right: 10px;
+        }
+        form input[type="text"] {
+            width: 190px;
+            border: 0;
+            border-bottom: 1px solid var(--primary-color);
+        }
+    }
+    .Nav-botones{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+        img{
+            width: 40px;
+        }
+    }
+}
+
+
+

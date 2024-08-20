@@ -1,0 +1,28 @@
+.contenedor-refugios{
+    width: 80%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    .tarjetas {
+        background-color: white;
+        flex: 1 1 calc(50% - 20px); 
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+}
+
+.tarjeta-mascotas{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 5px 0 12px 0;
+    img{
+        width: calc(33.33% - 10px);
+        border-radius: 4px;
+        object-fit: cover;
+    }
+}

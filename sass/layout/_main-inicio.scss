@@ -1,0 +1,83 @@
+.contenedor-inicio{
+    width: 90%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.507);
+}
+
+
+
+.tarjeta-infoUsuario{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 15px;
+    .tarjeta-fotoUsuario{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;   
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    div{
+        display: inline-block;
+    }
+}
+
+.tarjeta-mascota{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+
+.tarjeta-infoMascota{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 5px ;
+    font-size: 14px;
+    color: black;
+}
+
+.tarjeta-botonera{
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    img{
+        width: 35px;
+    }
+}
+
+.nombre{
+    font-weight: 600;
+    color: var(--primary-color) !important;
+}
+
+.Lugar{
+    font-weight: 400;
+    font-size: 13px;
+    color: grey!important;
+}
+
+.barra{
+    border-bottom: 2px solid lightgray;
+}

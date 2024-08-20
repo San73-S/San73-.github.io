@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(226,226,226,1) 110%);
+    font-family: "Montserrat", sans-serif;
+}
+
+main{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+p, h1{
+    color: white;
+}
+
+:root {
+    --primary-color: #2a5390;
+    --prueba1: #173c74; 
+    --prueba2: #173e79; 
+    --prueba3: #204680; 
+}
