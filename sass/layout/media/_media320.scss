@@ -1,0 +1,52 @@
+@media (max-width: 450px) {
+    .banner-contenedor{
+        .banner-imagen{
+        }
+        .banner-figura{
+            .banner-info{
+                article{
+                    grid-column: 2 / 12;
+                    grid-row: 4 / 12;
+                    p, h1{
+                        font-size: 25px;
+                    }
+                    .banner-informacion{
+                        font-size: 18px;
+                    }
+                }
+            }            
+        }
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .navegacion{
+        width: 70%;
+    }
+}
+@media (min-width: 400px) and (max-width: 450px) {    
+    .banner-contenedor{
+        .banner-imagen{
+        }
+        .banner-figura{
+            .banner-info{
+                article{
+                    grid-row: 5 / 12;
+                    p, h1{
+                    }
+                    .banner-informacion{
+                    }
+                }
+            }            
+        }
+    }
+
+    main{
+        width: 100%;
+    }
+}
+
+
+

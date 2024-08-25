@@ -1,0 +1,46 @@
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header{
+        nav{
+            .logo{}
+            .navbar{
+                .navbar-fondo{
+                    height: 90%;
+                    ul{
+                        li{
+                            a{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+    
+    .navbar-fondo2{     
+        div{
+            display: none;
+        }
+    }
+    
+    .banner-contenedor{
+        .banner-imagen{}
+        .banner-figura{
+            .banner-info{
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(11, 1fr);
+                article{
+                    grid-column: 5 / 12;
+                    grid-row: 3 / 12;
+                    p, h1{
+                        font-size: 30px;
+                    }
+                    .banner-informacion{
+                        font-size: 18px;
+                    }
+                }
+            }            
+        }
+    }
+}
